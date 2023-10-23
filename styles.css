@@ -1,0 +1,237 @@
+body {
+	margin: 0%;
+	padding: 0%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.main {
+	margin: 0%;
+	padding: 0%;
+	min-width: 100vw;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);
+	box-sizing: border-box;
+}
+.instruments_bar {
+	margin: 0.5em;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	right: 0%;
+	height: 98.5%;
+	box-sizing: border-box;
+	border: 0.1em solid black;
+	background-color: rgb(245, 245, 245);
+}
+.btnContainerH {
+	margin: 0.3em;
+}
+.words {
+	display: flex;
+
+	/* width: 50%; */
+}
+.word-container {
+	margin-top: 2em;
+
+	/* position: relative; */
+	display: flex;
+	flex-direction: column;
+	/* width: 50%; */
+	/* background-color: aqua; */
+}
+.newWordsContainer {
+	margin: 0.1em;
+	padding: 0em 2em 0em 1em;
+	border: 0.1em solid black;
+	border-radius: 1em;
+	display: inline-flex;
+	/* justify-content: space-around; */
+	background-color: rgb(249, 249, 249);
+}
+.newWindowsPhone {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.589);
+}
+.newWindowForm {
+	/* display: flex; */
+	display: inline-flex;
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	height: 20%;
+	border: 0.2em solid rgb(141, 141, 141);
+	background-color: rgb(196, 196, 196);
+}
+.inputsContainer {
+	margin: 0.5em;
+}
+.btnContainer {
+	margin: 0.5em;
+}
+.newEngWordContainer__style {
+	/* padding: 0 2em 0 0;
+
+	margin: 0 3em 0 0; */
+	padding: 0 1em 0 0;
+	margin: 0 1em 0 0;
+	/* min-width: 40%; */
+	display: inline-flex;
+	/* align-items: center; */
+}
+.newRusWordContainer__style {
+	padding: 0 3em 0 0;
+	margin: 0 5em 0 0;
+	/* width: 20em; */
+	/* justify-content: center; */
+	/* padding: 0 5em 0 5em;
+	margin: 0 5em 0 0; */
+
+	/* min-width: 10%; */
+
+	display: inline-flex;
+}
+.rus-words {
+	display: inline-flex;
+}
+.eng-rords {
+	display: inline-flex;
+}
+
+.hidden {
+	display: none;
+}
+.btnForm {
+	margin: 0.3em;
+}
+input {
+	border-radius: 1em;
+	margin: 0.5em;
+	/* max-width: 7em;
+	min-width: 4em; */
+}
+
+/* Экраны с шириной до 576 пикселей (например, мобильные телефоны) */
+@media (max-width: 576px) {
+	p {
+		font-size: 6px;
+	}
+	input {
+		max-width: 15em;
+	}
+	.newEngWordContainer__style {
+		min-width: 20%;
+		max-width: 25%;
+	}
+	.newRusWordContainer__style {
+		min-width: 15%;
+		max-width: 20%;
+	}
+	.newWordsContainer {
+		min-width: 10%;
+		max-width: 60%;
+	}
+	.newWindowForm {
+		min-width: 80%;
+		max-width: 80%;
+	}
+}
+
+/* Экраны с шириной от 576 пикселей (например, планшеты в портретной ориентации) */
+@media (min-width: 577px) and (max-width: 767px) {
+	p {
+		font-size: 10px;
+	}
+	input {
+		max-width: 15em;
+	}
+	.newEngWordContainer__style {
+		min-width: 25%;
+	}
+	.newRusWordContainer__style {
+		min-width: 25%;
+	}
+	.newWordsContainer {
+		min-width: 20em;
+		max-width: 24em;
+	}
+	.newWindowForm {
+		min-width: 40%;
+	}
+}
+
+/* Экраны с шириной от 768 пикселей (например, планшеты в альбомной ориентации) */
+@media (min-width: 768px) and (max-width: 991px) {
+	input {
+		max-width: 15em;
+	}
+	.newEngWordContainer__style {
+		min-width: 30%;
+	}
+	.newRusWordContainer__style {
+		min-width: 25%;
+	}
+	.newWordsContainer {
+		min-width: 30em;
+	}
+	.newWindowForm {
+		min-width: 40%;
+		max-width: 60%;
+	}
+}
+/* Экраны с шириной от 992 пикселей (например, маленькие десктопы) */
+@media (min-width: 992px) and (max-width: 1199px) {
+	p {
+		font-size: 15px;
+	}
+	input {
+		max-width: 15em;
+	}
+	.newEngWordContainer__style {
+		min-width: 30%;
+	}
+	.newRusWordContainer__style {
+		min-width: 30%;
+	}
+	.newWordsContainer {
+		min-width: 30em;
+	}
+	.newWindowForm {
+		min-width: 20%;
+		max-width: 20%;
+	}
+}
+
+/* Экраны с шириной от 1200 пикселей и больше (например, большие десктопы) */
+@media (min-width: 1200px) {
+	p {
+		font-size: 20px;
+	}
+	input {
+		max-width: 20em;
+	}
+	.newEngWordContainer__style {
+		min-width: 40%;
+	}
+	.newRusWordContainer__style {
+		min-width: 40%;
+	}
+	.newWordsContainer {
+		min-width: 40em;
+	}
+	.newWindowForm {
+		min-width: 20%;
+	}
+}
